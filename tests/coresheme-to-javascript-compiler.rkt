@@ -146,7 +146,7 @@
 ; The α-renaming pass makes names unique.
 ;
 ; Example:
-;   (let (x 1) (let (x 2) x)) is rewritten into (let (x 1) (let (x.1 2) x.2))
+;   (let (x 1) (let (x 2) x)) is rewritten into (let (x 1) (let (x.1 2) x.1))
 ;
 ; The code below uses an environment ρ that maps original identifiers
 ; into ones used in the output. Primitives are mapped to them selves
